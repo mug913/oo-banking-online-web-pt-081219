@@ -37,6 +37,7 @@ class Transfer
     new_sender = @sender
     @sender = @receiver 
     @receiver = new_sender 
+    self.execute_transaction
   end 
 
 end

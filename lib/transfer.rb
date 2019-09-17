@@ -34,6 +34,7 @@ class Transfer
  end
  
   def reverse_transfer
+    @status = "pending"
     new_sender = @sender
     @sender = @receiver 
     @receiver = new_sender 

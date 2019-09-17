@@ -33,4 +33,10 @@ class Transfer
    end 
  end
  
+  def reverse_transfer
+    new_sender = @sender
+    @sender = @receiver 
+    @receiver = new_sender 
+  end 
+
 end
